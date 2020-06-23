@@ -21,4 +21,7 @@ section {
   justify-content: center;
 }
 
-section h2 {}
+article {
+  display: flex;
+  flex-direction: column;
+}

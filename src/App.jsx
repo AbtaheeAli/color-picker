@@ -35,6 +35,12 @@ export class App extends Component {
           <h1>Choose Your Color!</h1>
         </section>
         <section>
+          <article
+            style={{
+              backgroundColor: `hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%`,
+            }}
+          ></article>
+          <p>{`hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
           <article>
             <h2>Hue</h2>
             <input
