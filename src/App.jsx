@@ -7,6 +7,16 @@ export class App extends Component {
     s: 0,
     l: 0,
   }
+
+  randomColor = () => {
+    this.setState({
+      h: Math.round(Math.random() * 360),
+      s: Math.round(Math.random() * 100),
+      l: Math.round(Math.random() * 100),
+      a: Math.round(Math.random() * 100),
+    })
+  }
+
   handleChangeH = event => {
     const colorThatIsChanging = event.target
     const valueOfColorChanging = parseInt(colorThatIsChanging.value)
@@ -42,7 +52,8 @@ export class App extends Component {
                 backgroundColor: `hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%`,
               }}
             ></article>
-            <p className="scale">{`hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
+            <p className="scale">{`hsl (${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
+            <button onClick={this.randomColor}>Random Color</button>
           </section>
           <section>
             <article>
@@ -60,7 +71,7 @@ export class App extends Component {
               <input
                 type="range"
                 min="0"
-                max="360"
+                max="100"
                 value={this.state.s}
                 onChange={this.handleChangeS}
               ></input>
@@ -70,7 +81,7 @@ export class App extends Component {
               <input
                 type="range"
                 min="0"
-                max="360"
+                max="1000"
                 value={this.state.l}
                 onChange={this.handleChangeL}
               ></input>

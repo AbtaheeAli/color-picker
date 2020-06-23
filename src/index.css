@@ -20,7 +20,7 @@ main {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding-top: 1.5rem;
+  padding-top: 0rem;
 }
 
 section h1 {
