@@ -2,6 +2,32 @@ import React, { Component } from 'react'
 import HelloWorld from './components/HelloWorld'
 
 export class App extends Component {
+  state = {
+    h: 0,
+    s: 0,
+    l: 0,
+  }
+  handleChangeH = event => {
+    const colorThatIsChanging = event.target
+    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
+
+    this.setState({ h: valueOfColorChanging })
+  }
+
+  handleChangeS = event => {
+    const colorThatIsChanging = event.target
+    const valueOfColorChanging = colorThatIsChanging.value
+
+    this.setState({ s: valueOfColorChanging })
+  }
+
+  handleChangeL = event => {
+    const colorThatIsChanging = event.target
+    const valueOfColorChanging = colorThatIsChanging.value
+
+    this.setState({ l: valueOfColorChanging })
+  }
+
   render() {
     return (
       <main>
@@ -15,7 +41,7 @@ export class App extends Component {
               type="range"
               min="0"
               max="360"
-              value="this.state.h"
+              value={this.state.h}
               onChange={this.handleChangeH}
             ></input>
           </article>
@@ -25,7 +51,7 @@ export class App extends Component {
               type="range"
               min="0"
               max="360"
-              value="this.state.s"
+              value={this.state.s}
               onChange={this.handleChangeS}
             ></input>
           </article>
@@ -35,7 +61,7 @@ export class App extends Component {
               type="range"
               min="0"
               max="360"
-              value="this.state.l"
+              value={this.state.l}
               onChange={this.handleChangeL}
             ></input>
           </article>
