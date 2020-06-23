@@ -16,14 +16,14 @@ export class App extends Component {
 
   handleChangeS = event => {
     const colorThatIsChanging = event.target
-    const valueOfColorChanging = colorThatIsChanging.value
+    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
 
     this.setState({ s: valueOfColorChanging })
   }
 
   handleChangeL = event => {
     const colorThatIsChanging = event.target
-    const valueOfColorChanging = colorThatIsChanging.value
+    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
 
     this.setState({ l: valueOfColorChanging })
   }
