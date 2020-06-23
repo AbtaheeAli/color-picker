@@ -30,49 +30,54 @@ export class App extends Component {
 
   render() {
     return (
-      <main>
-        <section>
+      <body>
+        <header>
           <h1>Choose Your Color!</h1>
-        </section>
-        <section>
-          <article
-            style={{
-              backgroundColor: `hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%`,
-            }}
-          ></article>
-          <p>{`hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
-          <article>
-            <h2>Hue</h2>
-            <input
-              type="range"
-              min="0"
-              max="360"
-              value={this.state.h}
-              onChange={this.handleChangeH}
-            ></input>
-          </article>
-          <article>
-            <h2>Saturation</h2>
-            <input
-              type="range"
-              min="0"
-              max="360"
-              value={this.state.s}
-              onChange={this.handleChangeS}
-            ></input>
-          </article>
-          <article>
-            <h2>Lightness</h2>
-            <input
-              type="range"
-              min="0"
-              max="360"
-              value={this.state.l}
-              onChange={this.handleChangeL}
-            ></input>
-          </article>
-        </section>
-      </main>
+        </header>
+        <main>
+          <section>
+            <article
+              className="colorBox"
+              style={{
+                backgroundColor: `hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%`,
+              }}
+            ></article>
+            <p className="scale">{`hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
+          </section>
+          <section>
+            <article>
+              <h2 className="slider">H</h2>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                value={this.state.h}
+                onChange={this.handleChangeH}
+              ></input>
+            </article>
+            <article>
+              <h2 className="slider">S</h2>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                value={this.state.s}
+                onChange={this.handleChangeS}
+              ></input>
+            </article>
+            <article>
+              <h2 className="slider">L</h2>
+              <input
+                type="range"
+                min="0"
+                max="360"
+                value={this.state.l}
+                onChange={this.handleChangeL}
+              ></input>
+            </article>
+          </section>
+        </main>
+      </body>
     )
   }
 }
