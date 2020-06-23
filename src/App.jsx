@@ -3,9 +3,9 @@ import HelloWorld from './components/HelloWorld'
 
 export class App extends Component {
   state = {
-    h: 0,
-    s: 0,
-    l: 0,
+    h: Math.round(Math.random() * 360),
+    s: Math.round(Math.random() * 100),
+    l: Math.round(Math.random() * 100),
   }
 
   randomColor = () => {
@@ -13,7 +13,6 @@ export class App extends Component {
       h: Math.round(Math.random() * 360),
       s: Math.round(Math.random() * 100),
       l: Math.round(Math.random() * 100),
-      a: Math.round(Math.random() * 100),
     })
   }
 
