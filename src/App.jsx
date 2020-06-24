@@ -80,7 +80,7 @@ export class App extends Component {
               <input
                 type="range"
                 min="0"
-                max="1000"
+                max="100"
                 value={this.state.l}
                 onChange={this.handleChangeL}
               ></input>
