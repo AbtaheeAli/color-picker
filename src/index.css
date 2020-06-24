@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Pangolin&display=swap');
 :root {
   font: 16px / 1 sans-serif;
 }
@@ -9,11 +10,18 @@ html {
 header {
   display: flex;
   justify-content: center;
+  background: -webkit-linear-gradient(#03045e, #66c3ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Pangolin', cursive;
+  font-size: 1.5rem;
 }
 
 body {
   margin: 0;
   min-height: 100%;
+  padding: 0;
+  background-image: url("https://i.pinimg.com/originals/ea/a9/63/eaa96374b2f67305090496b0cc47c424.jpg");
 }
 
 main {
@@ -48,5 +56,5 @@ article {
 }
 
 .scale {
-  margin-top: rem;
+  font-family: 'Pangolin', cursive;
 }
