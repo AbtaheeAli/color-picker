@@ -8,3 +8,6 @@ The application:
 - Uses state in react to drive changes to a user interface
 - Uses properties to drive inline styles to dynamically update the appearance of DOM elements
 - Initializes the state to a random color when the page is loaded.
+
+Thank you to Milan Nohejl for the animated background.
+https://codepen.io/nohoid/pen/kIfto
