@@ -10,18 +10,31 @@ html {
 header {
   display: flex;
   justify-content: center;
-  background: -webkit-linear-gradient(#03045e, #66c3ff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-family: 'Pangolin', cursive;
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
   font-size: 1.5rem;
+  color: white;
+  font-family: 'Pangolin', cursive;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 body {
   margin: 0;
   min-height: 100%;
   padding: 0;
-  background-image: url("https://i.pinimg.com/originals/ea/a9/63/eaa96374b2f67305090496b0cc47c424.jpg");
+  background-image: url('https://i.pinimg.com/originals/ea/a9/63/eaa96374b2f67305090496b0cc47c424.jpg');
 }
 
 main {

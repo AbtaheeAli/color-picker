@@ -42,6 +42,18 @@ export class App extends Component {
       <body>
         <header>
           <h1>Choose Your Color!</h1>
+
+          <div
+            class="btn-group mt-2 mb-4"
+            role="group"
+            aria-label="actionButtons"
+          ></div>
+
+          <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/js/all.min.js"
+            integrity="sha256-qM7QTJSlvtPSxVRjVWNM2OfTAz/3k5ovHOKmKXuYMO4="
+            crossorigin="anonymous"
+          ></script>
         </header>
         <main>
           <section>
