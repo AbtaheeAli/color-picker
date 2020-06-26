@@ -10,9 +10,7 @@ html {
 header {
   display: flex;
   justify-content: center;
-  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  background-size: 400% 400%;
-  animation: gradient 12s ease infinite;
+
   font-size: 1.5rem;
   color: white;
   font-family: 'Pangolin', cursive;
@@ -34,8 +32,9 @@ body {
   margin: 0;
   min-height: 100%;
   padding: 0;
-  background-color: #d5fefd;
-  background-image: linear-gradient(315deg, #d4f5f8 2%, #fffcff 74%);
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
 }
 
 main {
@@ -51,12 +50,12 @@ section h1 {
 }
 
 section {
-  margin-top: 3rem;
+  margin-top: 1rem;
   display: flex;
   align-items: center;
   flex-direction: column;
   padding-right: 3rem;
-  padding-top: 8rem;
+  padding-top: 2rem;
 }
 
 article {
@@ -65,8 +64,6 @@ article {
 }
 
 .colorBox {
-  margin-bottom: 1rem;
-  padding-top: 0rem;
   width: 300px;
   height: 300px;
   border-radius: 50%;
@@ -74,4 +71,5 @@ article {
 
 .scale {
   font-family: 'Pangolin', cursive;
+  padding-top: 1rem;
 }
