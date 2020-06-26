@@ -44,7 +44,7 @@ export class App extends Component {
           <h1>Choose Your Color!</h1>
 
           <div
-            class="btn-group mt-2 mb-4"
+            className="btn-group mt-2 mb-4"
             role="group"
             aria-label="actionButtons"
           ></div>
@@ -68,7 +68,7 @@ export class App extends Component {
           </section>
           <section>
             <article>
-              <h2 className="slider">H</h2>
+              <h2 className="sliderH">H</h2>
               <input
                 type="range"
                 min="0"
