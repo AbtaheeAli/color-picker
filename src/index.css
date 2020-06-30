@@ -43,6 +43,21 @@ main {
   padding-top: 0rem;
 }
 
+button {
+  width: 125px;
+  height: 30px;
+  border: thin;
+  border-radius: 8px;
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  background-color: #dddddd
+}
+
 section h1 {
   display: flex;
   justify-content: center;
