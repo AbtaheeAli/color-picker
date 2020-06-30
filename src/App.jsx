@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import HelloWorld from './components/HelloWorld'
 
 export class App extends Component {
   state = {
@@ -78,7 +77,7 @@ export class App extends Component {
               ></input>
             </article>
             <article>
-              <h2 className="slider">S</h2>
+              <h2 className="sliderS">S</h2>
               <input
                 type="range"
                 min="0"
@@ -88,7 +87,7 @@ export class App extends Component {
               ></input>
             </article>
             <article>
-              <h2 className="slider">L</h2>
+              <h2 className="sliderL">L</h2>
               <input
                 type="range"
                 min="0"

@@ -10,7 +10,6 @@ html {
 header {
   display: flex;
   justify-content: center;
-
   font-size: 1.5rem;
   color: white;
   font-family: 'Pangolin', cursive;
@@ -72,4 +71,16 @@ article {
 .scale {
   font-family: 'Pangolin', cursive;
   padding-top: 1rem;
+}
+
+.sliderH {
+  color: white;
+}
+
+.sliderS {
+  color: white;
+}
+
+.sliderL {
+  color: white;
 }
