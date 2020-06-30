@@ -84,3 +84,11 @@ article {
 .sliderL {
   color: white;
 }
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 12rem;
+  margin-right: 1rem;
+  color: white;
+}
