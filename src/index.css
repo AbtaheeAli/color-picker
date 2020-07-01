@@ -55,7 +55,7 @@ button:focus {
 }
 
 button:hover {
-  background-color: #dddddd
+  background-color: #dddddd;
 }
 
 section h1 {
@@ -97,6 +97,10 @@ article {
 }
 
 .sliderL {
+  color: white;
+}
+
+.sliderA {
   color: white;
 }
 

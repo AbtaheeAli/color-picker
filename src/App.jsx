@@ -5,6 +5,7 @@ export class App extends Component {
     h: Math.round(Math.random() * 360),
     s: Math.round(Math.random() * 100),
     l: Math.round(Math.random() * 100),
+    a: 1,
   }
 
   randomColor = () => {
@@ -16,24 +17,19 @@ export class App extends Component {
   }
 
   handleChangeH = event => {
-    const colorThatIsChanging = event.target
-    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
-
-    this.setState({ h: valueOfColorChanging })
+    this.setState({ h: event.target.value })
   }
 
   handleChangeS = event => {
-    const colorThatIsChanging = event.target
-    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
-
-    this.setState({ s: valueOfColorChanging })
+    this.setState({ s: event.target.value })
   }
 
   handleChangeL = event => {
-    const colorThatIsChanging = event.target
-    const valueOfColorChanging = parseInt(colorThatIsChanging.value)
+    this.setState({ l: event.target.value })
+  }
 
-    this.setState({ l: valueOfColorChanging })
+  handleChangeA = event => {
+    this.setState({ a: event.target.value })
   }
 
   render() {
@@ -57,10 +53,10 @@ export class App extends Component {
             <article
               className="colorBox"
               style={{
-                backgroundColor: `hsl(${this.state.h}, ${this.state.s}%, ${this.state.l}%`,
+                backgroundColor: `hsla(${this.state.h}, ${this.state.s}%, ${this.state.l}%, ${this.state.a}`,
               }}
             ></article>
-            <p className="scale">{`hsl (${this.state.h}, ${this.state.s}%, ${this.state.l}%,)`}</p>
+            <p className="scale">{`hsla (${this.state.h}, ${this.state.s}%, ${this.state.l}%, ${this.state.a})`}</p>
             <button onClick={this.randomColor}>Random Color</button>
           </section>
           <section>
@@ -92,6 +88,17 @@ export class App extends Component {
                 max="100"
                 value={this.state.l}
                 onChange={this.handleChangeL}
+              ></input>
+            </article>
+            <article>
+              <h2 className="sliderA">A</h2>
+              <input
+                type="range"
+                min="0"
+                max="1"
+                step="0.01"
+                value={this.state.a}
+                onChange={this.handleChangeA}
               ></input>
             </article>
           </section>
